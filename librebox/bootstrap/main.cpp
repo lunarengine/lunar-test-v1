@@ -50,10 +50,10 @@ static int LoaderMenu(int padding = 38, int gap = 10,
     int selected = 0;
 
     const char* options[] = {
-        "visual-darkhouse.lua",
-        "visual-tempform.lua",
-        "visual-sphere.lua",
-        "part_example.lua"
+        "visual-darkhouse.luau",
+        "visual-tempform.luau",
+        "visual-sphere.luau",
+        "part_example.luau"
     };
     const int optionCount = 4;
 
@@ -237,7 +237,7 @@ static void Stage_Initialization() {
                     LoadAndScheduleScript(p.stem().string(), p.string()); // run regardless of extension
                 } else if (fs::is_directory(p)) {
                     for (auto& entry : fs::directory_iterator(p)) {
-                        if (entry.is_regular_file() && entry.path().extension() == ".lua") {
+                        if (entry.is_regular_file() && entry.path().extension() == ".luau") {
                             LoadAndScheduleScript(entry.path().stem().string(), entry.path().string());
                         }
                     }
@@ -363,7 +363,7 @@ int main(int argc, char** argv) {
             std::string arg = argv[i];
             if (arg.find(' ') == std::string::npos &&
                 arg.size() > 4 &&
-                arg.rfind(".lua") == arg.size() - 4) {
+                arg.rfind(".luau") == arg.size() - 4) {
                 gPaths.push_back(arg);
                 args = true;
             }
