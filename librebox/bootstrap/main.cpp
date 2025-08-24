@@ -18,6 +18,7 @@
 #include "place_file.h"
 #include "preloaded_scripts.h"
 
+#ifdef _WIN32
 // avoid Win32 name collisions
 #define WIN32_LEAN_AND_MEAN
 #define CloseWindow Win32CloseWindow
@@ -26,6 +27,7 @@
 #undef DrawText
 #undef CloseWindow
 #undef ShowCursor
+#endif
 
 static Camera3D g_camera{};
 
@@ -149,6 +151,8 @@ static void Stage_Initialization() {
     };
 
     SetWindowIcon(icon);
+    
+#ifdef _WIN32
     HICON hIcon = CreateIconFromResourceEx(
         (PBYTE)icon_ico,
         (DWORD)icon_ico_len,
@@ -163,6 +167,7 @@ static void Stage_Initialization() {
         SendMessage(hwnd, WM_SETICON, ICON_BIG, (LPARAM)hIcon);
         SendMessage(hwnd, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
     }
+#endif
 
 
     LOGI("Raylib window initialized");
