@@ -8,6 +8,7 @@
 #include <functional>
 #include <type_traits>
 #include <utility>
+#include <stdlib>
 
 // Raylib
 #include <raylib.h>
@@ -49,6 +50,19 @@ struct Instance : std::enable_shared_from_this<Instance> {
     std::shared_ptr<Instance> FindFirstChild(const std::string& name) {
         auto it = ChildrenByName.find(name);
         return it == ChildrenByName.end() ? nullptr : it->second;
+    }
+    std::shared_ptr<Instance> WaitForChild(const std::string& name) {
+        auto it = ChildrenByName.find(name);
+        if it ~= ChildrenByName.end() {
+            return it
+        } else {
+            while (it == ChildrenByName.end()) {
+                sleep(1);
+                it = ChildrenByName.find(name);
+            }
+        }
+        
+        return it;
     }
     std::shared_ptr<Instance> FindFirstChildOfClass(const std::string& className) const;
     std::shared_ptr<Instance> FindFirstChildWhichIsA(const std::string& className) const;
