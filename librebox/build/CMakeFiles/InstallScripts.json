@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/ndn/development/librebox-demo/librebox/build/cmake_install.cmake",
+		"/Users/ndn/development/librebox-demo/librebox/build/luau/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
