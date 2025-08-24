@@ -1,4 +1,5 @@
 CMakeFiles/librebox.dir/bootstrap/LuaScheduler.cpp.o: \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.cpp \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \

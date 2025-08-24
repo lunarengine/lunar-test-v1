@@ -1,4 +1,5 @@
 CMakeFiles/librebox.dir/bootstrap/instances/Script.cpp.o: \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/Script.cpp \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/Script.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BaseScript.h \

@@ -1,4 +1,5 @@
 CMakeFiles/librebox.dir/bootstrap/instances/BaseScript.cpp.o: \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BaseScript.cpp \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BaseScript.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/LuaSourceContainer.h \

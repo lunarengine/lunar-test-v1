@@ -1,4 +1,5 @@
 CMakeFiles/librebox.dir/bootstrap/Renderer.cpp.o: \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Renderer.cpp \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Renderer.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h \

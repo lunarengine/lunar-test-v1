@@ -1,4 +1,5 @@
 CMakeFiles/librebox.dir/bootstrap/instances/Workspace.cpp.o: \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/Workspace.cpp \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/Workspace.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/services/Service.h \

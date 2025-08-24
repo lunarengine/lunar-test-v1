@@ -903,6 +903,7 @@ CMakeFiles/librebox.dir/bootstrap/Game.cpp.o: /Users/ndn/development/librebox-de
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Game.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
@@ -1826,6 +1827,7 @@ CMakeFiles/librebox.dir/bootstrap/Instance.cpp.o: /Users/ndn/development/librebo
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/core/logging/Logging.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h
@@ -2732,6 +2734,7 @@ CMakeFiles/librebox.dir/bootstrap/LuaScheduler.cpp.o: /Users/ndn/development/lib
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BaseScript.h \
@@ -3649,6 +3652,7 @@ CMakeFiles/librebox.dir/bootstrap/Renderer.cpp.o: /Users/ndn/development/librebo
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Game.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
@@ -4577,6 +4581,7 @@ CMakeFiles/librebox.dir/bootstrap/ScriptingAPI.cpp.o: /Users/ndn/development/lib
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Game.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
@@ -5503,6 +5508,7 @@ CMakeFiles/librebox.dir/bootstrap/instances/BasePart.cpp.o: /Users/ndn/developme
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BasePart.h \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/CFrame.h \
@@ -6417,6 +6423,7 @@ CMakeFiles/librebox.dir/bootstrap/instances/BaseScript.cpp.o: /Users/ndn/develop
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Game.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
@@ -7340,6 +7347,7 @@ CMakeFiles/librebox.dir/bootstrap/instances/CameraGame.cpp.o: /Users/ndn/develop
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/CameraGame.h \
   /Users/ndn/development/librebox-demo/librebox/core/logging/Logging.h \
@@ -8243,6 +8251,7 @@ CMakeFiles/librebox.dir/bootstrap/instances/LocalScript.cpp.o: /Users/ndn/develo
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BaseScript.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/LocalScript.h \
@@ -9148,6 +9157,7 @@ CMakeFiles/librebox.dir/bootstrap/instances/Part.cpp.o: /Users/ndn/development/l
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BasePart.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/Part.h \
@@ -10059,6 +10069,7 @@ CMakeFiles/librebox.dir/bootstrap/instances/Script.cpp.o: /Users/ndn/development
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BaseScript.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/LuaSourceContainer.h \
@@ -10964,6 +10975,7 @@ CMakeFiles/librebox.dir/bootstrap/instances/Workspace.cpp.o: /Users/ndn/developm
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BasePart.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/CameraGame.h \
@@ -11930,6 +11942,7 @@ CMakeFiles/librebox.dir/bootstrap/main.cpp.o: /Users/ndn/development/librebox-de
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Game.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
@@ -11964,7 +11977,8 @@ CMakeFiles/librebox.dir/bootstrap/main.cpp.o: /Users/ndn/development/librebox-de
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raymath.h
 
-CMakeFiles/librebox.dir/bootstrap/services/ContextActionService.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/ContextActionService.cpp
+CMakeFiles/librebox.dir/bootstrap/services/ContextActionService.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/ContextActionService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 CMakeFiles/librebox.dir/bootstrap/services/Lighting.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/Lighting.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -12864,6 +12878,7 @@ CMakeFiles/librebox.dir/bootstrap/services/Lighting.cpp.o: /Users/ndn/developmen
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/services/Lighting.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/services/Service.h \
@@ -12875,7 +12890,8 @@ CMakeFiles/librebox.dir/bootstrap/services/Lighting.cpp.o: /Users/ndn/developmen
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/lualib.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h
 
-CMakeFiles/librebox.dir/bootstrap/services/Players.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/Players.cpp
+CMakeFiles/librebox.dir/bootstrap/services/Players.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/Players.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 CMakeFiles/librebox.dir/bootstrap/services/RunService.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/RunService.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -13779,6 +13795,7 @@ CMakeFiles/librebox.dir/bootstrap/services/RunService.cpp.o: /Users/ndn/developm
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Game.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
@@ -14707,6 +14724,7 @@ CMakeFiles/librebox.dir/bootstrap/services/Service.cpp.o: /Users/ndn/development
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Game.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/Instance.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
@@ -14731,9 +14749,11 @@ CMakeFiles/librebox.dir/bootstrap/services/Service.cpp.o: /Users/ndn/development
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/lualib.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h
 
-CMakeFiles/librebox.dir/bootstrap/services/TweenService.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/TweenService.cpp
+CMakeFiles/librebox.dir/bootstrap/services/TweenService.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/TweenService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/bootstrap/services/UserInputService.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/UserInputService.cpp
+CMakeFiles/librebox.dir/bootstrap/services/UserInputService.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/services/UserInputService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 CMakeFiles/librebox.dir/bootstrap/signals/Signal.cpp.o: /Users/ndn/development/librebox-demo/librebox/bootstrap/signals/Signal.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -15637,6 +15657,7 @@ CMakeFiles/librebox.dir/bootstrap/signals/Signal.cpp.o: /Users/ndn/development/l
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h \
   /Users/ndn/development/librebox-demo/librebox/bootstrap/signals/Signal.h \
   /Users/ndn/development/librebox-demo/librebox/luau/Compiler/include/luacode.h \
@@ -15644,9 +15665,11 @@ CMakeFiles/librebox.dir/bootstrap/signals/Signal.cpp.o: /Users/ndn/development/l
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/luaconf.h \
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/lualib.h
 
-CMakeFiles/librebox.dir/core/bindings/Bindings.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/bindings/Bindings.cpp
+CMakeFiles/librebox.dir/core/bindings/Bindings.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/bindings/Bindings.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/datatypes/BrickColor.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/BrickColor.cpp
+CMakeFiles/librebox.dir/core/datatypes/BrickColor.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/BrickColor.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 CMakeFiles/librebox.dir/core/datatypes/CFrame.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/CFrame.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -16404,6 +16427,7 @@ CMakeFiles/librebox.dir/core/datatypes/CFrame.cpp.o: /Users/ndn/development/libr
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/CFrame.h \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/LuaDatatypes.h \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/Vector3Game.h \
@@ -17346,6 +17370,7 @@ CMakeFiles/librebox.dir/core/datatypes/Color3.cpp.o: /Users/ndn/development/libr
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/Color3.h \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/LuaDatatypes.h \
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/lua.h \
@@ -17353,7 +17378,8 @@ CMakeFiles/librebox.dir/core/datatypes/Color3.cpp.o: /Users/ndn/development/libr
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/lualib.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h
 
-CMakeFiles/librebox.dir/core/datatypes/Enum.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/Enum.cpp
+CMakeFiles/librebox.dir/core/datatypes/Enum.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/Enum.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 CMakeFiles/librebox.dir/core/datatypes/Random.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/Random.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -18305,6 +18331,7 @@ CMakeFiles/librebox.dir/core/datatypes/Random.cpp.o: /Users/ndn/development/libr
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/LuaDatatypes.h \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/Random.h \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/Vector3Game.h \
@@ -18313,11 +18340,14 @@ CMakeFiles/librebox.dir/core/datatypes/Random.cpp.o: /Users/ndn/development/libr
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/lualib.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h
 
-CMakeFiles/librebox.dir/core/datatypes/UDim.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/UDim.cpp
+CMakeFiles/librebox.dir/core/datatypes/UDim.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/UDim.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/datatypes/UDim2.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/UDim2.cpp
+CMakeFiles/librebox.dir/core/datatypes/UDim2.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/UDim2.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/datatypes/Vector2.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/Vector2.cpp
+CMakeFiles/librebox.dir/core/datatypes/Vector2.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/Vector2.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 CMakeFiles/librebox.dir/core/datatypes/Vector3Game.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/datatypes/Vector3Game.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -18567,6 +18597,7 @@ CMakeFiles/librebox.dir/core/datatypes/Vector3Game.cpp.o: /Users/ndn/development
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/LuaDatatypes.h \
   /Users/ndn/development/librebox-demo/librebox/core/datatypes/Vector3Game.h \
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/lua.h \
@@ -18574,29 +18605,41 @@ CMakeFiles/librebox.dir/core/datatypes/Vector3Game.cpp.o: /Users/ndn/development
   /Users/ndn/development/librebox-demo/librebox/luau/VM/include/lualib.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h
 
-CMakeFiles/librebox.dir/core/instances/BasePart.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/BasePart.cpp
+CMakeFiles/librebox.dir/core/instances/BasePart.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/BasePart.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/Instance.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/Instance.cpp
+CMakeFiles/librebox.dir/core/instances/Instance.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/Instance.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/PVInstance.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/PVInstance.cpp
+CMakeFiles/librebox.dir/core/instances/PVInstance.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/PVInstance.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/Workspace.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/Workspace.cpp
+CMakeFiles/librebox.dir/core/instances/Workspace.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/Workspace.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/misc/clickdetector/ClickDetector.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/misc/clickdetector/ClickDetector.cpp
+CMakeFiles/librebox.dir/core/instances/misc/clickdetector/ClickDetector.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/misc/clickdetector/ClickDetector.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/parts/MeshPart.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/parts/MeshPart.cpp
+CMakeFiles/librebox.dir/core/instances/parts/MeshPart.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/parts/MeshPart.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/parts/Part.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/parts/Part.cpp
+CMakeFiles/librebox.dir/core/instances/parts/Part.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/parts/Part.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/scripts/BaseScript.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/BaseScript.cpp
+CMakeFiles/librebox.dir/core/instances/scripts/BaseScript.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/BaseScript.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/scripts/LocalScript.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/LocalScript.cpp
+CMakeFiles/librebox.dir/core/instances/scripts/LocalScript.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/LocalScript.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/scripts/LuaSourceContainer.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/LuaSourceContainer.cpp
+CMakeFiles/librebox.dir/core/instances/scripts/LuaSourceContainer.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/LuaSourceContainer.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/scripts/ModuleScript.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/ModuleScript.cpp
+CMakeFiles/librebox.dir/core/instances/scripts/ModuleScript.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/ModuleScript.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/instances/scripts/Script.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/Script.cpp
+CMakeFiles/librebox.dir/core/instances/scripts/Script.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/instances/scripts/Script.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 CMakeFiles/librebox.dir/core/logging/Logging.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/logging/Logging.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -18665,54 +18708,78 @@ CMakeFiles/librebox.dir/core/logging/Logging.cpp.o: /Users/ndn/development/libre
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/ptrcheck.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/core/logging/Logging.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h
 
-CMakeFiles/librebox.dir/core/runtime/AccessLevel.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/AccessLevel.cpp
+CMakeFiles/librebox.dir/core/runtime/AccessLevel.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/AccessLevel.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/runtime/Event.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/Event.cpp
+CMakeFiles/librebox.dir/core/runtime/Event.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/Event.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/runtime/LuaScheduler.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/LuaScheduler.cpp
+CMakeFiles/librebox.dir/core/runtime/LuaScheduler.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/LuaScheduler.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/runtime/RunService.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/RunService.cpp
+CMakeFiles/librebox.dir/core/runtime/RunService.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/RunService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/runtime/ScriptCompile.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/ScriptCompile.cpp
+CMakeFiles/librebox.dir/core/runtime/ScriptCompile.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/ScriptCompile.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/runtime/ScriptContext.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/ScriptContext.cpp
+CMakeFiles/librebox.dir/core/runtime/ScriptContext.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/ScriptContext.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/runtime/System.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/System.cpp
+CMakeFiles/librebox.dir/core/runtime/System.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/System.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/runtime/TaskScheduler.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/TaskScheduler.cpp
+CMakeFiles/librebox.dir/core/runtime/TaskScheduler.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/TaskScheduler.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/core/runtime/Time.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/Time.cpp
+CMakeFiles/librebox.dir/core/runtime/Time.cpp.o: /Users/ndn/development/librebox-demo/librebox/core/runtime/Time.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/GuiService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/GuiService.cpp
+CMakeFiles/librebox.dir/services/GuiService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/GuiService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/LightingService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/LightingService.cpp
+CMakeFiles/librebox.dir/services/LightingService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/LightingService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/PhysicsService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/PhysicsService.cpp
+CMakeFiles/librebox.dir/services/PhysicsService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/PhysicsService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/PlayersService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/PlayersService.cpp
+CMakeFiles/librebox.dir/services/PlayersService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/PlayersService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/RegisterBuiltinServices.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/RegisterBuiltinServices.cpp
+CMakeFiles/librebox.dir/services/RegisterBuiltinServices.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/RegisterBuiltinServices.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/ReplicatedStorageService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/ReplicatedStorageService.cpp
+CMakeFiles/librebox.dir/services/ReplicatedStorageService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/ReplicatedStorageService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/RunService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/RunService.cpp
+CMakeFiles/librebox.dir/services/RunService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/RunService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/Service.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/Service.cpp
+CMakeFiles/librebox.dir/services/Service.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/Service.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/ServiceLocator.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/ServiceLocator.cpp
+CMakeFiles/librebox.dir/services/ServiceLocator.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/ServiceLocator.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/SoundService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/SoundService.cpp
+CMakeFiles/librebox.dir/services/SoundService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/SoundService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/StarterGuiService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/StarterGuiService.cpp
+CMakeFiles/librebox.dir/services/StarterGuiService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/StarterGuiService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/StarterPlayerService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/StarterPlayerService.cpp
+CMakeFiles/librebox.dir/services/StarterPlayerService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/StarterPlayerService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/TweenService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/TweenService.cpp
+CMakeFiles/librebox.dir/services/TweenService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/TweenService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/services/UserInputService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/UserInputService.cpp
+CMakeFiles/librebox.dir/services/UserInputService.cpp.o: /Users/ndn/development/librebox-demo/librebox/services/UserInputService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 CMakeFiles/librebox.dir/subsystems/filesystem/FileSystem.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/filesystem/FileSystem.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -19667,41 +19734,58 @@ CMakeFiles/librebox.dir/subsystems/filesystem/FileSystem.cpp.o: /Users/ndn/devel
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt \
   /Users/ndn/development/librebox-demo/librebox/core/logging/Logging.h \
   /Users/ndn/development/librebox-demo/librebox/subsystems/filesystem/FileSystem.h \
   /opt/homebrew/Cellar/raylib/5.5/include/raylib.h
 
-CMakeFiles/librebox.dir/subsystems/input/CursorRaycaster.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/input/CursorRaycaster.cpp
+CMakeFiles/librebox.dir/subsystems/input/CursorRaycaster.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/input/CursorRaycaster.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/input/InputManager.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/input/InputManager.cpp
+CMakeFiles/librebox.dir/subsystems/input/InputManager.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/input/InputManager.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/input/UserInputService.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/input/UserInputService.cpp
+CMakeFiles/librebox.dir/subsystems/input/UserInputService.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/input/UserInputService.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/networking/AssetFetcher.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/networking/AssetFetcher.cpp
+CMakeFiles/librebox.dir/subsystems/networking/AssetFetcher.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/networking/AssetFetcher.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/networking/HttpClient.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/networking/HttpClient.cpp
+CMakeFiles/librebox.dir/subsystems/networking/HttpClient.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/networking/HttpClient.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/physics/Collision.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/Collision.cpp
+CMakeFiles/librebox.dir/subsystems/physics/Collision.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/Collision.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/physics/PhysicsSync.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/PhysicsSync.cpp
+CMakeFiles/librebox.dir/subsystems/physics/PhysicsSync.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/PhysicsSync.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/physics/PhysicsWorld.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/PhysicsWorld.cpp
+CMakeFiles/librebox.dir/subsystems/physics/PhysicsWorld.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/PhysicsWorld.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/physics/RigidBody.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/RigidBody.cpp
+CMakeFiles/librebox.dir/subsystems/physics/RigidBody.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/RigidBody.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/physics/Solver.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/Solver.cpp
+CMakeFiles/librebox.dir/subsystems/physics/Solver.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/physics/Solver.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/rendering/CameraAdapter.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/CameraAdapter.cpp
+CMakeFiles/librebox.dir/subsystems/rendering/CameraAdapter.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/CameraAdapter.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/rendering/GuiRender.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/GuiRender.cpp
+CMakeFiles/librebox.dir/subsystems/rendering/GuiRender.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/GuiRender.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/rendering/Mesh.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/Mesh.cpp
+CMakeFiles/librebox.dir/subsystems/rendering/Mesh.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/Mesh.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/rendering/RaylibContext.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/RaylibContext.cpp
+CMakeFiles/librebox.dir/subsystems/rendering/RaylibContext.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/RaylibContext.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/rendering/Renderer.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/Renderer.cpp
+CMakeFiles/librebox.dir/subsystems/rendering/Renderer.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/Renderer.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
-CMakeFiles/librebox.dir/subsystems/rendering/Shading.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/Shading.cpp
+CMakeFiles/librebox.dir/subsystems/rendering/Shading.cpp.o: /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/Shading.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt
 
 
 /Users/ndn/development/librebox-demo/librebox/subsystems/rendering/Renderer.cpp:
@@ -19959,6 +20043,8 @@ CMakeFiles/librebox.dir/subsystems/rendering/Shading.cpp.o: /Users/ndn/developme
 /Users/ndn/development/librebox-demo/librebox/bootstrap/instances/BasePart.h:
 
 /Users/ndn/development/librebox-demo/librebox/bootstrap/LuaScheduler.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/share/asan_ignorelist.txt:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/stdint.h:
 

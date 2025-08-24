@@ -267,6 +267,15 @@ COCOA_FRAMEWORK:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/Ma
 //Path to a library.
 COREVIDEO_FRAMEWORK:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreVideo.framework
 
+//Enable AddressSanitizer
+ENABLE_ASAN:BOOL=ON
+
+//Enable MemorySanitizer
+ENABLE_MSAN:BOOL=OFF
+
+//Enable UndefinedBehaviorSanitizer
+ENABLE_UBSAN:BOOL=OFF
+
 //Path to a library.
 IOKIT_FRAMEWORK:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework
 
