@@ -4,8 +4,11 @@
 
 // Construct-on-first-use idiom to prevent static destruction order fiasco
 std::unordered_map<std::string, std::shared_ptr<Service>>& Service::GetRegistry() {
-    static std::unordered_map<std::string, std::shared_ptr<Service>> registry;
-    return registry;
+    // Use a static local variable with construct-on-first-use idiom
+    // This ensures the registry outlives any Service objects
+    static std::unordered_map<std::string, std::shared_ptr<Service>>* registry = 
+        new std::unordered_map<std::string, std::shared_ptr<Service>>();
+    return *registry;
 }
 
 Service::Service(std::string name, InstanceClass cls)
@@ -14,7 +17,7 @@ Service::Service(std::string name, InstanceClass cls)
 }
 
 Service::~Service() {
-    // Safe access to registry - it's guaranteed to exist when this destructor runs
+    // Safe access to registry - the registry is never destroyed due to construct-on-first-use with new
     auto& registry = GetRegistry();
     registry.erase(Name);
 }

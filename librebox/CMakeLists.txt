@@ -13,6 +13,11 @@ if(APPLE)
   set(CMAKE_MACOSX_RPATH ON)
 endif()
 
+# Memory debugging options
+option(ENABLE_ASAN "Enable AddressSanitizer" OFF)
+option(ENABLE_MSAN "Enable MemorySanitizer" OFF)
+option(ENABLE_UBSAN "Enable UndefinedBehaviorSanitizer" OFF)
+
 # Paths
 set(PROJ_ROOT "${CMAKE_SOURCE_DIR}")
 set(VENDOR_DIR "${PROJ_ROOT}/third_party/vendor")
@@ -119,17 +124,50 @@ endif()
 
 target_compile_features(librebox PRIVATE cxx_std_20)
 
+# Sanitizer flags
+set(SANITIZER_FLAGS)
+set(SANITIZER_LINK_FLAGS)
+
+if(ENABLE_ASAN)
+  list(APPEND SANITIZER_FLAGS -fsanitize=address -fno-omit-frame-pointer)
+  list(APPEND SANITIZER_LINK_FLAGS -fsanitize=address)
+  message(STATUS "AddressSanitizer enabled")
+endif()
+
+if(ENABLE_MSAN)
+  list(APPEND SANITIZER_FLAGS -fsanitize=memory -fno-omit-frame-pointer)
+  list(APPEND SANITIZER_LINK_FLAGS -fsanitize=memory)
+  message(STATUS "MemorySanitizer enabled")
+endif()
+
+if(ENABLE_UBSAN)
+  list(APPEND SANITIZER_FLAGS -fsanitize=undefined)
+  list(APPEND SANITIZER_LINK_FLAGS -fsanitize=undefined)
+  message(STATUS "UndefinedBehaviorSanitizer enabled")
+endif()
+
 if(MSVC)
   target_compile_options(librebox PRIVATE /EHsc /O2 /DNOMINMAX)
 elseif(APPLE)
   target_compile_options(librebox PRIVATE -O2 -Wall -Wextra)
+  if(SANITIZER_FLAGS)
+    target_compile_options(librebox PRIVATE ${SANITIZER_FLAGS})
+  endif()
 elseif(UNIX)
   target_compile_options(librebox PRIVATE -O2 -Wall -Wextra)
+  if(SANITIZER_FLAGS)
+    target_compile_options(librebox PRIVATE ${SANITIZER_FLAGS})
+  endif()
 endif()
 
 
 # ---------- Linking ----------
 target_link_libraries(librebox PRIVATE ${LUAU_LIB} ${RAYLIB_LIB})
+
+# Apply sanitizer link flags
+if(SANITIZER_LINK_FLAGS)
+  target_link_options(librebox PRIVATE ${SANITIZER_LINK_FLAGS})
+endif()
 
 if(WIN32)
   target_link_libraries(librebox PRIVATE opengl32 gdi32 winmm user32 shell32)
