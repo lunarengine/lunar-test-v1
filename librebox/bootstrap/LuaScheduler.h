@@ -36,6 +36,11 @@ public:
     void StopScript(BaseScript* s);
     void StopScript(const std::shared_ptr<BaseScript>& s) { StopScript(s.get()); }
 
+private:
+    void StopScriptImmediate(BaseScript* s);
+
+public:
+
     void Step(double now, double dt = 0.0);
 
     // Script waits
@@ -106,6 +111,10 @@ private:
     std::unordered_map<BaseScript*, ScriptState> state;
     std::deque<std::shared_ptr<BaseScript>> ready;
     std::deque<std::shared_ptr<BaseScript>> nextFrameQ;
+    
+    // Deferred cleanup to avoid iterator invalidation during execution
+    std::vector<BaseScript*> scriptsToStop;
+    bool inStepExecution = false;
 
     struct TimeCmp {
         const std::unordered_map<BaseScript*, ScriptState>* st = nullptr;

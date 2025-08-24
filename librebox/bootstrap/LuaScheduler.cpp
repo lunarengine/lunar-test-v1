@@ -164,6 +164,19 @@ void LuaScheduler::AddScript(const std::shared_ptr<BaseScript>& script,
 void LuaScheduler::StopScript(BaseScript* s) {
     if (!s) return;
 
+    // If we're in the middle of Step() execution, defer the cleanup to avoid iterator invalidation
+    if (inStepExecution) {
+        scriptsToStop.push_back(s);
+        return;
+    }
+
+    // Immediately perform cleanup
+    StopScriptImmediate(s);
+}
+
+void LuaScheduler::StopScriptImmediate(BaseScript* s) {
+    if (!s) return;
+
     // Drop state so the coroutine will never be resumed again.
     auto it = state.find(s);
     if (it != state.end()) state.erase(it);
@@ -246,6 +259,9 @@ void LuaScheduler::SetTaskWaitNextFrame(lua_State* co) {
 void LuaScheduler::Step(double now, double /*dt*/) {
     if (!L_main) return;
     frameIndex++;
+    
+    // Set execution flag to defer script cleanup during execution
+    inStepExecution = true;
 
     lua_gc(L_main, LUA_GCSTEP, 200);
 
@@ -449,4 +465,11 @@ void LuaScheduler::Step(double now, double /*dt*/) {
 
         if ((resumes & 7) == 0) t = GetTime();
     }
+    
+    // Clear execution flag and process any deferred script cleanups
+    inStepExecution = false;
+    for (BaseScript* s : scriptsToStop) {
+        StopScriptImmediate(s);
+    }
+    scriptsToStop.clear();
 }

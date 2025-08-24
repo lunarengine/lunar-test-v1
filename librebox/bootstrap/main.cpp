@@ -18,6 +18,7 @@
 #include "place_file.h"
 #include "preloaded_scripts.h"
 
+#ifdef _WIN32
 // avoid Win32 name collisions
 #define WIN32_LEAN_AND_MEAN
 #define CloseWindow Win32CloseWindow
@@ -26,6 +27,7 @@
 #undef DrawText
 #undef CloseWindow
 #undef ShowCursor
+#endif
 
 static Camera3D g_camera{};
 
@@ -42,7 +44,32 @@ static void PhysicsSimulation() {
     // stub
 }
 
-static void Cleanup();
+// RAII cleanup guard to ensure proper cleanup order and crash safety
+class ApplicationCleanup {
+    bool cleaned = false;
+public:
+    ApplicationCleanup() = default;
+    ~ApplicationCleanup() {
+        cleanup();
+    }
+    
+    void cleanup() {
+        if (cleaned) return;
+        cleaned = true;
+        
+        LOGI("ApplicationCleanup: begin");
+        if (g_game) {
+            g_game->Shutdown();
+            g_game.reset();
+        }
+        CloseWindow();
+        LOGI("ApplicationCleanup: end");
+    }
+    
+    // Prevent copying to avoid double cleanup
+    ApplicationCleanup(const ApplicationCleanup&) = delete;
+    ApplicationCleanup& operator=(const ApplicationCleanup&) = delete;
+};
 
 static int LoaderMenu(int padding = 38, int gap = 10,
                       int headerHeight = 90, int instrToOptionsGap = 100) {
@@ -104,7 +131,6 @@ static int LoaderMenu(int padding = 38, int gap = 10,
 
 static void Stage_ConfigInitialization() {
     SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT);
-    std::atexit(&Cleanup);
     LOGI("Loaded configuration");
 }
 
@@ -149,6 +175,8 @@ static void Stage_Initialization() {
     };
 
     SetWindowIcon(icon);
+    
+#ifdef _WIN32
     HICON hIcon = CreateIconFromResourceEx(
         (PBYTE)icon_ico,
         (DWORD)icon_ico_len,
@@ -163,6 +191,7 @@ static void Stage_Initialization() {
         SendMessage(hwnd, WM_SETICON, ICON_BIG, (LPARAM)hIcon);
         SendMessage(hwnd, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
     }
+#endif
 
 
     LOGI("Raylib window initialized");
@@ -339,17 +368,9 @@ static void Stage_Run() {
     LOGI("Stage: Run loop end");
 }
 
-static void Cleanup() {
-    LOGI("Cleanup begin");
-    if (g_game) {
-        g_game->Shutdown();
-        g_game.reset();
-    }
-    CloseWindow();
-    LOGI("Cleanup end");
-}
-
 int main(int argc, char** argv) {
+    // RAII cleanup guard ensures proper cleanup order and crash safety
+    ApplicationCleanup cleanup_guard;
     for (int i = 1; i < argc; i++) {
         if (std::strcmp(argv[i], "--target-fps") == 0 && i + 1 < argc) {
             gTargetFPS = std::atoi(argv[++i]);
