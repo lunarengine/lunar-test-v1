@@ -18,6 +18,9 @@ option(ENABLE_ASAN "Enable AddressSanitizer" OFF)
 option(ENABLE_MSAN "Enable MemorySanitizer" OFF)
 option(ENABLE_UBSAN "Enable UndefinedBehaviorSanitizer" OFF)
 
+# Testing options
+option(ENABLE_TESTING "Enable unit tests with Google Test" OFF)
+
 # Paths
 set(PROJ_ROOT "${CMAKE_SOURCE_DIR}")
 set(VENDOR_DIR "${PROJ_ROOT}/third_party/vendor")
@@ -213,3 +216,24 @@ endif()
 
 # Set final output name
 set_target_properties(librebox PROPERTIES OUTPUT_NAME "LibreboxPlayer")
+
+# ---------- Google Test Integration ----------
+if(ENABLE_TESTING)
+  # Download and configure Google Test
+  include(FetchContent)
+  FetchContent_Declare(
+    googletest
+    URL https://github.com/google/googletest/archive/refs/tags/v1.15.2.zip
+    DOWNLOAD_EXTRACT_TIMESTAMP TRUE
+  )
+  
+  # For Windows: Prevent overriding the parent project's compiler/linker settings
+  set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+  FetchContent_MakeAvailable(googletest)
+  
+  # Enable testing
+  enable_testing()
+  
+  # Add tests subdirectory
+  add_subdirectory(tests)
+endif()
