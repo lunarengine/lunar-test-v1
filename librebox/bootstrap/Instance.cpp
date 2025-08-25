@@ -116,8 +116,11 @@ void Instance::Destroy() {
     }
     Parent.reset();
 
-    // destroy children
-    for (auto& c : Children) if (c) c->Destroy();
+    // destroy children - snapshot first to avoid iterator invalidation
+    auto childrenSnapshot = Children;
+    for (auto& c : childrenSnapshot) {
+        if (c && c->Alive) c->Destroy();
+    }
     Children.clear();
     ChildrenByName.clear();
     Attributes.clear();

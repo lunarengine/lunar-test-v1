@@ -193,10 +193,10 @@ uniform float fresnelStrength;// 0..1
 uniform float aoStrength;     // 0..1
 uniform float groundY;        // ground plane Y
 
-// CSM
-uniform sampler2DShadow shadowMap0;
-uniform sampler2DShadow shadowMap1;
-uniform sampler2DShadow shadowMap2;
+// CSM - Use regular sampler2D for compatibility with Raylib's render textures
+uniform sampler2D shadowMap0;
+uniform sampler2D shadowMap1;
+uniform sampler2D shadowMap2;
 uniform int   shadowMapResolution;
 uniform float pcfStep;        // in texels
 uniform float biasMin;        // min bias
@@ -212,14 +212,17 @@ uniform float exposure;       // new exposure control
 // raylib default material color (tint * material diffuse)
 uniform vec4 colDiffuse;
 
-float SampleShadow(sampler2DShadow smap, vec3 proj, float ndl){
+float SampleShadow(sampler2D smap, vec3 proj, float ndl){
     float bias = mix(biasMax, biasMin, ndl);
     float step = pcfStep / float(shadowMapResolution);
     float sum = 0.0;
     for(int x=-1; x<=1; ++x)
     for(int y=-1; y<=1; ++y){
         vec2 off = vec2(x,y) * step;
-        sum += texture(smap, vec3(proj.xy + off, proj.z - bias));
+        // Manual depth comparison for regular sampler2D
+        float shadowDepth = texture(smap, proj.xy + off).r;
+        float currentDepth = proj.z - bias;
+        sum += (shadowDepth >= currentDepth) ? 1.0 : 0.0;
     }
     return sum / 9.0;
 }
@@ -398,30 +401,18 @@ static int ui_transition = -1;
 
 // ---------------- Shadowmap helpers ----------------
 static RenderTexture2D LoadShadowmapRenderTexture(int width, int height){
-    RenderTexture2D target = {0};
-    target.id = rlLoadFramebuffer(); // empty FBO
-    target.texture.width = width;
-    target.texture.height = height;
-
-    if (target.id > 0){
-        rlEnableFramebuffer(target.id);
-
-        // Depth texture only
-        target.depth.id = rlLoadTextureDepth(width, height, false);
-        target.depth.width = width;
-        target.depth.height = height;
-        target.depth.format = 19; // DEPTH24
-        target.depth.mipmaps = 1;
-
-        rlFramebufferAttach(target.id, target.depth.id, RL_ATTACHMENT_DEPTH, RL_ATTACHMENT_TEXTURE2D, 0);
-        rlFramebufferComplete(target.id);
-        rlDisableFramebuffer();
-    }
+    // Use Raylib's high-level API instead of manual OpenGL calls
+    RenderTexture2D target = LoadRenderTexture(width, height);
+    
+    // Raylib automatically handles framebuffer, color and depth textures
+    // This is more compatible across platforms (OpenGL, Metal, DirectX)
+    
     return target;
 }
 
 static void UnloadShadowmapRenderTexture(RenderTexture2D target){
-    if (target.id > 0) rlUnloadFramebuffer(target.id);
+    // Use Raylib's high-level API for cleanup
+    UnloadRenderTexture(target);
 }
 
 // --------- CFrame -> axis-angle (for DrawModelEx) ----------
@@ -937,11 +928,12 @@ void RenderFrame(Camera3D& camera) {
 
     if (kCullBackFace) rlEnableBackfaceCulling();
 
-    // bind three depth textures to slots 10..12
+    // Use Raylib's high-level texture binding instead of low-level OpenGL calls
+    // Since we're now using LoadRenderTexture(), use the depth textures properly
     int slot0 = 10, slot1 = 11, slot2 = 12;
-    rlActiveTextureSlot(slot0); rlEnableTexture(gShadowMapCSM[0].depth.id);
-    rlActiveTextureSlot(slot1); rlEnableTexture(gShadowMapCSM[1].depth.id);
-    rlActiveTextureSlot(slot2); rlEnableTexture(gShadowMapCSM[2].depth.id);
+    
+    // Raylib's SetShaderValueTexture handles texture binding automatically
+    // We'll set these in the shader uniform binding section below
 
     // Prepare per-frame uniform values
     float viewPosArr[3] = { camera.position.x, camera.position.y, camera.position.z };
@@ -999,10 +991,11 @@ void RenderFrame(Camera3D& camera) {
         SetShaderValue(sh, loc_transition, &transitionFrac, SHADER_UNIFORM_FLOAT);
         SetShaderValue(sh, loc_exposureL, &exposure, SHADER_UNIFORM_FLOAT);
 
-        // bind sampler slots for this program
-        rlSetUniform(loc_shadow0, &slot0, SHADER_UNIFORM_INT, 1);
-        rlSetUniform(loc_shadow1, &slot1, SHADER_UNIFORM_INT, 1);
-        rlSetUniform(loc_shadow2, &slot2, SHADER_UNIFORM_INT, 1);
+        // Use Raylib's high-level texture binding API
+        // Bind depth textures for shadow sampling using SetShaderValueTexture
+        if (loc_shadow0 >= 0) SetShaderValueTexture(sh, loc_shadow0, gShadowMapCSM[0].depth);
+        if (loc_shadow1 >= 0) SetShaderValueTexture(sh, loc_shadow1, gShadowMapCSM[1].depth);
+        if (loc_shadow2 >= 0) SetShaderValueTexture(sh, loc_shadow2, gShadowMapCSM[2].depth);
     };
 
     // Apply per-frame values to both non-instanced and instanced shaders

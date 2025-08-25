@@ -1,0 +1,52 @@
+# Build directories
+build/
+**/build/
+cmake-build-*/
+out/
+dist/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
+_deps/
+lib/
+
+# Object files and libraries
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# IDE files
+.vs/
+.vscode/
+.idea/
+*.user
+*.sdf
+*.opensdf
+*.VC.opendb
+*.suo
+_ReSharper.Caches/
+xcuserdata/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+*~
+
+# Google Test build artifacts
+googletest/
+googlemock/
+gtest/
+gmock/
