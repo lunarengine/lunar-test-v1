@@ -16,15 +16,19 @@
 ## Open-source Luau 3D engine (API-compatible)
 
 <div style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:10px;">
+  <h3>Wireframe sphere<h3/>
   <img src="repo/example2.gif" alt="Demo gif" width="256"/>
+  <h3>Rotating rainbow Part</h3>
   <img src="repo/example3.gif" alt="Demo gif" width="256"/>
+  <h3>House with butterfly's<h3/>
   <div style="flex-basis:100%; height:0;"></div> <!-- forces new row -->
   <img src="repo/example4.gif" alt="Demo gif" style="height:256px; width:auto;">
 </div>
+<h3>Wave simulator<h3/>
 <img src="repo/example6.gif" alt="Demo gif" width="256"/>
 
 ### What is Lunar Engine?
-**LunarEngine** (formerly **Librebox**) is an open-source game engine powered by Luau. It delivers a sandbox-style API and development model inspired by popular sandbox engines, so existing Luau code runs with minimal changes.
+**LunarEngine** (formerly **Librebox**) is an open-source game engine powered by Luau. It delivers a sandbox-style API and development model inspired by other popular sandbox engines, so existing Luau code runs with minimal changes.
 
 ### Why Lunar?
 Lunar gives developers full agency over their games - from the code to the engine. Build immersive experiences with a familiar interface while maintaining complete ownership of your platform.
@@ -56,7 +60,7 @@ end)
 
 ### Compatibility
 
-Lunar Engine is currently in demo stage (it implements a limited subset of its planned API), but here is what is supported:
+Lunar Engine is currently in demo stage (it implements a limited subset of its planned API), but here is what is currently supported:
 
 - Basic scene rendering
   - Lighting, shadows, ambient, skybox
@@ -99,11 +103,11 @@ Lunar Engine is currently in demo stage (it implements a limited subset of its p
 ---
 
 ### Download
-[Download releases here.](https://github.com/librebox-devs/librebox-demo/releases)
+[Latest releases here.](https://github.com/librebox-devs/librebox-demo/releases)
 
 ### To Be Added
 
-Of course, this is just a rendering demo. Lunar Engine is extensible and easily supports the additions of new services and features. 
+Of course, right now, this is just a rendering demo. Lunar Engine is extensible and easily supports the additions of new services and features. 
 
 In the next release, we will incorporate `UserInputService` and `StarterPlayer`, turning LunarApp into an actual interactive engine.
 
@@ -112,11 +116,11 @@ Lunar Engine currently supports Windows, but **can easily be ported anywhere**. 
 
 * Windows 7+ (`.exe`)
   * Standalone executable (LunarApp.exe)
-* Linux support immediate priority
+* Linux support is the next immediate priority
   
 ### Future Support
 
-Right now, Lunar Engine compatibility is limited. This is currently a demo (not even a release!). In future releases, you can expect the following:
+Right now, Lunar Engine compatibility is very limited. This is currently a demo (not even a release!). In future releases, you can expect the following:
 
 * Physics
   * Collision events, aspects
@@ -128,9 +132,9 @@ Right now, Lunar Engine compatibility is limited. This is currently a demo (not 
 * Materials, stronger rendering
 
 And, in the future.
-* Replication support (and Servers)
+* Replication support (with Servers)
 
-Lunar Engine is on its way to becoming a fully fledged dev platform -- just like Godot, or Unity, you can transfer your current Lua skills into Lunar, and create **games you own.**
+Lunar Engine is on its way to becoming a fully fledged dev platform -- just like Godot and Unity, you can transfer your current Lua skills into Lunar, and create **games you own.**
 
 ### The future of Lunar Engine
 
@@ -148,20 +152,22 @@ This is entirely feasible, and, in fact, a good point for the existence of Lunar
 And best of all, it is copyright free and open source (Lunar Engine is just an environment.) 
 
 ### Usage and Documentation
-
-I'll add this ASAP. For building dependencies, use the 'build_dependencies.bat' script, and for building the engine, `build_engine.bat`
+For building dependencies, use the 'build_dependencies.bat' script. \
+For building the engine, use the `build_engine.bat` script. \
 For the .exe, you can specify a path either as the first argument (lua script only), or as ``--path`` (script or folder). 
-LunarApp.exe includes three arguments: ``--no-place``, ``--target-fps``, and ``--path``.
 
-``--no-place``: (FLAG) Does not execute the default place initialization script (this includes the Baseplate.)
-``--target-fps``: Restrict the FPS to a certain value (default monitor refresh rate)
-``--path``: Path to script
+LunarApp.exe includes three arguments:
+
+* ``--no-place``: (FLAG) Does not execute the default place initialization script (this includes the Baseplate.) 
+* ``--target-fps``: Restrict the FPS to a certain value (default monitor refresh rate) 
+* ``--path``: Path to script (.lua) 
 
 ### Licenses
 This project uses:
 
 - Luau, licensed under the MIT License.  
-  Copyright (c) 2025 Roblox Corporation.  
+  Copyright (c) 2025 Roblox Corporation.
+  
 - raylib, licensed under the zlib/libpng License.  
   Copyright (c) 2013-2025 Ramon Santamaria and contributors.
 
@@ -169,7 +175,7 @@ This project uses:
 > Lunar Engine is an independent open-source project. It is not affiliated with or sponsored by any commercial platform. All names and references are for interoperability only. Lunar Engine uses no third-party source code, assets, or proprietary materials.
 
 ### Contact (TEMPORARY ONLY)
-You can send requests or questions at ``librebox.developers@gmail.com``.
+You can send requests or questions at ``librebox.developers@gmail.com`` or the discord linked at the top.
 
 ---
 ##### "LUNARENGINE IS JUST AN ENVIRONMENT"
