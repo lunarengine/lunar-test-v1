@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <limits>
 #include <algorithm>
+#include <cmath>
 
 // Raylib time
 #include <raylib.h>

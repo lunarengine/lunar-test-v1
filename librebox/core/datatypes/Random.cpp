@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <limits>
 #include <cstring>
+#include <stdexcept>
 
 using namespace lb;
 

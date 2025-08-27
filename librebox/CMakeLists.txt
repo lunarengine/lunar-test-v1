@@ -7,6 +7,12 @@ if(MSVC)
   set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreadedDLL")
 endif()
 
+if(MSVC)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /EHsc /O2 /DNOMINMAX")
+else()
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -Wall -Wextra")
+endif()
+
 # Paths
 set(PROJ_ROOT "${CMAKE_SOURCE_DIR}")
 set(VENDOR_DIR "${PROJ_ROOT}/third_party/vendor")
@@ -26,13 +32,19 @@ message(STATUS "Found Luau library: ${LUAU_LIB}")
 
 # ---------- Find Pre-built Raylib lib ----------
 set(RAYLIB_INSTALL_DIR "${VENDOR_DIR}/raylib")
+if(WIN32)
+  set(RAYLIB_LIB_NAMES raylib raylib_static)
+else()
+  set(RAYLIB_LIB_NAMES raylib libraylib.a)
+endif()
+
 find_library(RAYLIB_LIB
-  NAMES raylib raylib_static
+  NAMES ${RAYLIB_LIB_NAMES}
   PATHS "${RAYLIB_INSTALL_DIR}/lib"
   NO_DEFAULT_PATH
 )
 if(NOT RAYLIB_LIB)
-  message(FATAL_ERROR "raylib(.lib) not found in ${RAYLIB_INSTALL_DIR}/lib")
+  message(FATAL_ERROR "raylib library not found in ${RAYLIB_INSTALL_DIR}/lib")
 endif()
 message(STATUS "Found Raylib library: ${RAYLIB_LIB}")
 
@@ -62,15 +74,14 @@ target_include_directories(librebox PRIVATE
 
 target_compile_features(librebox PRIVATE cxx_std_20)
 
-if(MSVC)
-  target_compile_options(librebox PRIVATE /EHsc /O2 /DNOMINMAX)
-endif()
-
 
 # ---------- Linking ----------
 target_link_libraries(librebox PRIVATE ${LUAU_LIB} ${RAYLIB_LIB})
+
 if(WIN32)
   target_link_libraries(librebox PRIVATE opengl32 gdi32 winmm user32 shell32)
+elseif(UNIX AND NOT APPLE)
+  target_link_libraries(librebox PRIVATE GL X11 pthread dl m)
 endif()
 
 
