@@ -1,6 +1,6 @@
 # LunarEngine (demo)
 <div style="display:flex; align-items:center; gap:20px; margin:10px 0;">
-  <a href="https://discord.gg/N66awhg7" style="text-decoration:none;">
+  <a href="https://discord.gg/BXbS7RpgMR" style="text-decoration:none;">
     <img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge" alt="Discord"/>
   </a>
   <a href="https://github.com/librebox-devs/librebox-demo/releases" style="text-decoration:none;">
